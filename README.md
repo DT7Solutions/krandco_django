@@ -1,0 +1,1 @@
+# krandco_django
