@@ -3946,6 +3946,7 @@ ul.counter-list li:nth-child(2) {
 	background: var(--white);
 	position: relative;
 	z-index: 1;
+	min-height:450px!important;
 }
 
 .services-style-one p {
@@ -9099,4 +9100,4 @@ ul.list-two li i {
 		padding: 18px 40px;
 		font-size: 16px;
 	}
-}	
+}
