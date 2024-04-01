@@ -1,6 +1,10 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from .models import Contact
+from .models import Contact,Product
+from django.core.mail import send_mail,EmailMessage
+from django.contrib import messages
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+import os 
 
 # Create your views here.
 
@@ -14,7 +18,13 @@ def about_us(request):
 
 
 def tobacco_varieties(request):
-    return render(request, 'uifiles/tobacco-varieties.html')
+    Products = Product.objects.filter().order_by('-Id')
+    paginator = Paginator(Products, 6)
+    page = request.GET.get('page')
+    listproducts = paginator.get_page(page)
+    
+
+    return render(request, 'uifiles/tobacco-varieties.html',{'Products':listproducts,'posts':listproducts,'page':page})
 
 
 def contact(request):

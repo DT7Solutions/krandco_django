@@ -25,7 +25,50 @@
     <!-- End Breadcrumb -->
 
   
-
+ <!-- Start Team Single Area
+    ============================================= -->
+    <div class="farmer-single-area bg-gray default-padding-top">
+        {% for Productitem in Products %}
+        <div class="container">
+            <div class="farmer-content-top">
+                <div class="row">
+                    <div class="col-lg-5 pr-50 pr-md-15 pr-xs-15">
+                        <div class="pf-item">
+                            <div class="gallery-style-two">
+                                <img src="/media/{{Productitem.Image1}}" alt="Thumb">
+                                <div class="overlay">
+                                    
+                                    <h4><a href="#">{{Productitem.Title}}</a></h4>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 right-info">
+                        <h4 style="font-weight: 700;">{{Productitem.Title}}</h6>
+                            <ul class="fields mt-25 ">
+                                <li class="property">Crop Year: <span >
+                                    {{Productitem.CropYear}}</span></li>
+                                <li class="property pr-5">Type: <span >Feb to May</span></li>
+                                <li class="property pr-5">Grade: <span >Feb to May</span></li>
+                                <li class="property pr-5">Form: <span >Feb to May</span></li>
+                                <li class="property pr-5">Nic: <span >Feb to May</span></li>
+                                <li class="property pr-5">Sug: <span >254</span></li>
+                                <li class="property pr-5">Packing: <span >Feb to May</span></li>
+                                <li class="property pr-5">Quantity: <span >20Tons</span></li>
+                               
+                            </ul>
+                        <!-- <span>Physical Characteristics</span>
+                        <span>Chemical Characteristics</span> -->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- End Team Single Area -->
         <!-- Start Featured Product 
     ============================================= -->
     <div class="feature-product-area default-padding">

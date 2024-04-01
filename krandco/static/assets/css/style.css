@@ -5121,7 +5121,7 @@ ul.counter-list li:nth-child(2) {
 	text-transform: uppercase;
 	color: var(--color-primary);
 	font-weight: 700;
-	margin-bottom: 25px;
+	/* margin-bottom: 2px; */
 }
 
 .farmer-single-area .right-info ul li {
@@ -9100,4 +9100,16 @@ ul.list-two li i {
 		padding: 18px 40px;
 		font-size: 16px;
 	}
+}
+
+/* .value{
+	
+	color: #000!important;
+	font-weight: 500!important;
+} */
+.right-info .fields span {
+	display: inline-block!important;
+}
+.value{
+	padding-left: 50px!important;
 }
