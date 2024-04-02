@@ -1,0 +1,75 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+
+
+ <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(/static/assets/img/csr-activity.png);background-size: 100%!important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Csr Activity</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">Csr Activity</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Blog 
+    ============================================= -->
+    <div class="blog-area blog-grid full-blog default-padding">
+        <div class="container">
+            <div class="blog-item-box">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="col-xl-4 col-md-6 single-item">
+                        <div class="blog-style-one">
+                            <div class="thumb">
+                                <a href="#"><img src="{% static 'assets/img/800x600.png' %}" alt="Image Not Found"></a>
+                                <div class="date"><strong>18</strong> <span>Apr, 22</span></div>
+                            </div>
+                            <div class="info">
+                               
+                                <h3 class="title">
+                                    <a href="#">Announcing if attachment resolution sentiments.</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Item -->
+                  
+                   
+                    
+                   
+                   
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="row">
+                <div class="col-md-12 pagi-area text-center">
+                    <nav aria-label="navigation">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- End Pagination -->
+        </div>
+    </div>
+    <!-- End Blog -->
+
+
+
+{% endblock %}

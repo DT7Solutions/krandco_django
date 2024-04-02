@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from .models import Contact,Product
+from .models import Contact,Productitem
 from django.core.mail import send_mail,EmailMessage
 from django.contrib import messages
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
@@ -15,16 +15,20 @@ def index(request):
 
 def about_us(request):
     return render(request, 'uifiles/about.html')
+def csractivity(request):
+    return render(request, 'uifiles/csr.html')
+def csrdetails(request):
+    return render(request, 'uifiles/csr.html')
 
 
 def tobacco_varieties(request):
-    Products = Product.objects.filter().order_by('-Id')
-    paginator = Paginator(Products, 6)
-    page = request.GET.get('page')
-    listproducts = paginator.get_page(page)
+    Product = Productitem.objects.all()
+    # paginator = Paginator(Productitem, 6)
+    # page = request.GET.get('page')
+    # listproducts = paginator.get_page(page)
     
 
-    return render(request, 'uifiles/tobacco-varieties.html',{'Products':listproducts,'posts':listproducts,'page':page})
+    return render(request, 'uifiles/tobacco-varieties.html',{'Products':Product})
 
 
 def contact(request):

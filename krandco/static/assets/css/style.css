@@ -90,7 +90,9 @@ Sidebar heading:  20px 'Manrope', sans-serif
 	--black: #000000;
 	--dark: #1f4e3d;
 	--white: #ffffff;
-	--color-primary: #49a760;
+	/* --color-primary: #49a760; */
+	--color-primary: #288027;
+	
 	--color-secondary: #f7c35f;
 	--color-heading: #04000b;
 	--color-paragraph: #787878;
