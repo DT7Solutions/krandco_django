@@ -88,10 +88,14 @@ Sidebar heading:  20px 'Manrope', sans-serif
 	--font-secondary: 'Handlee', cursive;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
-	--dark: #1f4e3d;
+	/* --dark: #133d2e!important; */
+	--dark:#1C270C!important;
+	
 	--white: #ffffff;
 	/* --color-primary: #49a760; */
-	--color-primary: #288027;
+	/* --color-primary: #288027; */
+	--color-primary: #22954C!important;
+	
 	
 	--color-secondary: #f7c35f;
 	--color-heading: #04000b;
@@ -7840,24 +7844,24 @@ ul.list-heading-title li p {
 =================================================================== */
 
 .gardening .btn.btn-theme {
-    background: #2ab939;
+    background:  #22954C;;
     color: var(--white);
 }
 
 .gardening .navbar .attr-right .attr-nav li .call i {
-    color: #2ab939;
+    color:  #22954C;
 }
 
 .gardening .sub-title {
-    color: #2ab939;
+    color:  #22954C;
 }
 
 .gardening ul.list-check li::after {
-    background: #2ab939;
+    background:  #22954C;
 }
 
 .gardening .about-four-info .call-us i {
-    color: #2ab939;
+    color:  #22954C;
 }
 
 .gardening .btn.btn-theme::after {
@@ -7874,7 +7878,10 @@ ul.list-heading-title li p {
 	}
 
 	.gardening nav.navbar.navbar-style-one.validnavs.navbar-fixed.no-background {
-		background: #2ab939;
+		background:  #22954C;
+		
+		
+		
 	}
 
 	nav.navbar.navbar-style-one.validnavs.navbar-fixed.no-background .navbar-header {
@@ -7996,7 +8003,7 @@ ul.list-heading-title li p {
 
 
 .carousel-stage-right-two .gallery-style-one .overlay {
-    background: #2ab939;
+    background:  #22954C;
 }
 
 .carousel-stage-right-two .gallery-style-one .overlay::after {
@@ -8035,7 +8042,7 @@ ul.list-heading-title li p {
     right: -70px;
     top: 60px;
     text-align: center;
-    background: linear-gradient(97deg, #2ab939 50%, rgba(252,197,27,1) 100%);
+    background: linear-gradient(97deg,  #22954C 50%, rgba(252,197,27,1) 100%);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -8287,7 +8294,7 @@ ul.list-check li:first-child {
 }
 
 .services-style-three .content .icon {
-    background: #2ab939;
+    background:  #22954C;
     height: 75px;
     width: 75px;
     line-height: 75px;
@@ -8325,7 +8332,7 @@ ul.list-check li:first-child {
     content: "";
     height: 70%;
     left: 2%;
-    background: #2ab939;
+    background:  #22954C;
     z-index: -1;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
@@ -9114,4 +9121,7 @@ ul.list-two li i {
 }
 .value{
 	padding-left: 50px!important;
+}
+.farmer-single-area .right-info ul li {
+	margin-top: 0!important;
 }
