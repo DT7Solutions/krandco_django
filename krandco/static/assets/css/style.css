@@ -5115,7 +5115,7 @@ ul.counter-list li:nth-child(2) {
 .farmer-single-area .farmer-content-top .right-info {
 	padding-left: 35px;
 	padding-right: 50px;
-	margin-bottom: 50px;
+	/* margin-bottom: 10px; */
 }
 
 .farmer-single-area .farmer-content-top .right-info h2 {
@@ -6671,7 +6671,7 @@ footer {
 
 .footer-bottom {
 	padding: 20px 0;
-	background: var(--dark);
+	background: var(--color-primary)!important;
 	position: relative;
 	z-index: 1;
 	padding-right: 30px;
@@ -6693,7 +6693,7 @@ footer {
 	content: "";
 	height: 100%;
 	width: 500%;
-	background: #1a4133;
+	background: #22954C;
 	z-index: -1;
 	border-radius: 0 30px 0 0;
 }
@@ -9124,4 +9124,16 @@ ul.list-two li i {
 }
 .farmer-single-area .right-info ul li {
 	margin-top: 0!important;
+}
+
+.pro{
+	font-weight:800!important;
+	color: #000000;
+}
+.boder-b{
+	border-bottom:dashed;
+}
+.boder-b:hover{
+	border-bottom:groove;
+	border-color: #22954C!important;
 }
