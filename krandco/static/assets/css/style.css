@@ -9137,3 +9137,11 @@ ul.list-two li i {
 	border-bottom:groove;
 	border-color: #22954C!important;
 }
+.sha{
+    border: 1px solid #dddddd;
+    padding: 20px 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--white);
+    
+}
