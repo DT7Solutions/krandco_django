@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from .models import Contact,Productitem
+from .models import Contact,ProductItems
 from django.core.mail import send_mail,EmailMessage
 from django.contrib import messages
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
@@ -22,7 +22,7 @@ def csrdetails(request):
 
 
 def tobacco_varieties(request):
-    Product = Productitem.objects.all()
+    Product = ProductItems.objects.all()
     # paginator = Paginator(Productitem, 6)
     # page = request.GET.get('page')
     # listproducts = paginator.get_page(page)

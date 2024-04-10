@@ -37,11 +37,12 @@ class Contact(models.Model):
 #     (1,"Publish")
 # )
 
-class Productitem(models.Model):
+class ProductItems(models.Model):
     # Id = models.AutoField(primary_key=True)
     Title =  models.CharField(max_length=225,default="title")
     # ImageCategory = models.ForeignKey(ImageCategorys,on_delete=models.CASCADE,related_name='categories')
     # Description = models.CharField(max_length=2000,blank=True,null=True)
+    CurrentStock = models.CharField(max_length=100)
     Image1 = models.ImageField(upload_to='uploads/')
     CropYear = models.CharField(max_length=100)
     Type = models.CharField(max_length=100)
