@@ -45,7 +45,7 @@ def contact(request):
 
         errors = {}
         if not name:
-            errors['name'] = 'please fil the name field.'
+            errors['name'] = 'please fill the name field.'
         
         if not email:
             errors['email'] = 'please fill the email field.'
