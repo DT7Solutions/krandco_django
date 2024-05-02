@@ -9142,6 +9142,72 @@ ul.list-two li i {
     padding: 20px 30px;
     border-radius: 15px;
     overflow: hidden;
-    background: var(--white);
-    
+    background: var(--white); 
 }
+
+
+
+/* ======================================= Tobacco varieties ============================================ */
+.tobacco-varieties-content span{
+	color: #000000;
+	padding-top: -10px;
+}
+
+.tobacco-varieties-img{
+	text-align:center;
+}
+
+.tobacco-varieties-content{
+	display: flex !important;
+}
+.tobacco-varieties-content p{
+	color: #000000 !important;
+	line-height: 10px !important;
+}
+.tobacco-varieties-sec{
+	display: flex !important;
+}
+	
+.tobacco-varieties-img h5{
+	font-weight: bolder !important;
+}
+.tobacco-varieties-sec{
+	border-bottom: 2px dashed lightgray !important;
+}
+
+.tobacco-varieties-sec:hover{
+	border-bottom: 2px solid green !important;
+	transition: all .2s ease-in !important;
+}
+
+@media (min-width:320px) and (max-width:480px){
+	.tobacco-varieties-sec{
+		display: block !important;
+	}
+	.tobacco-varieties-content{
+		display: flex !important;
+		overflow: hidden;
+		font-size: 11px !important;
+	}
+	.tobacco-second-content{
+		margin-left: -9px !important;
+	}
+
+	.tobacco-second-content br{
+		padding-bottom: 90px !important;
+	}
+	.tobacco-varieties-img h5{
+		font-weight: bolder !important;
+	}
+	.tobacco-varieties-sec{
+		border-bottom: 2px dashed lightgray !important;
+	}
+
+	.tobacco-varieties-sec:hover{
+		border-bottom: 2px solid green !important;
+		transition: all .2s ease-in !important;
+	}
+
+}
+
+

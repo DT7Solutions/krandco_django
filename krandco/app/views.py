@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from .models import Contact,ProductItems
+from .models import Contact,ProductItem
 from django.core.mail import send_mail,EmailMessage
 from django.contrib import messages
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
@@ -12,23 +12,27 @@ import os
 def index(request):
     return render(request, 'uifiles/index.html')
 
-
 def about_us(request):
     return render(request, 'uifiles/about.html')
+
+def tobacco_varieties(request):
+    return render (request, 'uifiles/tobacco-varieties.html')
+
 def csractivity(request):
     return render(request, 'uifiles/csr.html')
+
 def csrdetails(request):
     return render(request, 'uifiles/csr.html')
 
 
-def tobacco_varieties(request):
-    Product = ProductItems.objects.all()
+def stock_update(request):
+    Product = ProductItem.objects.all()
     # paginator = Paginator(Productitem, 6)
     # page = request.GET.get('page')
     # listproducts = paginator.get_page(page)
     
 
-    return render(request, 'uifiles/tobacco-varieties.html',{'Products':Product})
+    return render(request, 'uifiles/stock-update.html',{'Products':Product})
 
 
 def contact(request):
@@ -50,10 +54,10 @@ def contact(request):
             errors['phone'] = 'please fill the phone field.'
 
         if not address:
-            errors['address'] = 'please fill the phone field.'
+            errors['address'] = 'please fill the address field.'
 
         if not comments:
-            errors['comments'] = 'please fill the phone field.'
+            errors['comments'] = 'please fill the comments field.'
         
 
         else:

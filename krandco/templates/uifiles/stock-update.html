@@ -1,0 +1,93 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Start Breadcrumb 
+    ============================================= -->
+<div class="breadcrumb-area text-center shadow dark bg-fixed text-light"
+    style="background-image: url(/static/assets/img/about/tobaccoproperties.png);background-size: 100%!important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>Stock Updates</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Stock Updates</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+
+
+<section class="tobacco-main-sec pt-2 pb-2">
+    <div class="container">
+        <div class="row">
+            <!---- Product one start ------>
+            {% for Productitem in Products %}
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto">
+                    <h5>{{Productitem.Title}}</h5>
+                    <img src="/media/{{Productitem.Image}}" alt="" class="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row "> 
+                            <div class="tobacco-varieties-content flex-wrap">
+                            <div class="col-lg-6 col-6">
+                                <p>Planting</p>
+                                <p>Marketing</p>
+                            </div>
+                
+                            <div class="col-lg-6 col-6 tobacco-second-content">
+                                <p><b>:</b> {{Productitem.Planting}}</p>
+                                <p><b>:</b> {{Productitem.Marketing}}</p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p class="text-start"><b>Physical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Colour</p>
+                                <p>Leaf Size</p>
+                                <p>Volume (M1/Gm)</p>
+                                <p>Filling Value</p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p><b>:</b> {{Productitem.Colour}}</p>
+                                <p><b>:</b> {{Productitem.Leaf_Size}}</p>
+                                <p><b>:</b> {{Productitem.Volume}}</p>
+                                <p><b>:</b> {{Productitem.Filling_Value}}</p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p><b>Chemical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Nicotine %</p>
+                                <p>Reducing_Sugars %</p>
+                                <p>Chloride %</p>
+                            </div>
+                            <div class="col-lg-6 col-6"> 
+                                <p><b>:</b> {{Productitem.Nicotine}}</p>
+                                <p><b>:</b> {{Productitem.Reducing_Sugars}}</p>
+                                <p><b>:</b> {{Productitem.Chloride}}</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            {% endfor %}
+            <!---- Product one end ------>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}

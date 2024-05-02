@@ -37,28 +37,20 @@ class Contact(models.Model):
 #     (1,"Publish")
 # )
 
-class ProductItems(models.Model):
-    # Id = models.AutoField(primary_key=True)
-    Title =  models.CharField(max_length=225,default="title")
-    # ImageCategory = models.ForeignKey(ImageCategorys,on_delete=models.CASCADE,related_name='categories')
-    # Description = models.CharField(max_length=2000,blank=True,null=True)
-    CurrentStock = models.CharField(max_length=100)
-    Image1 = models.ImageField(upload_to='uploads/')
-    CropYear = models.CharField(max_length=100)
-    Type = models.CharField(max_length=100)
-    Grade = models.CharField(max_length=100)
-    From = models.CharField(max_length=100)
-    Nic = models.CharField(max_length=100)
-    Sug = models.CharField(max_length=100)
-    Packing = models.CharField(max_length=100)
-    Quantity = models.CharField(max_length=100)
-    # CreatedName =  models.CharField(max_length=100)
-    # Create_at = models.DateTimeField(default=datetime.now)
-    # status = models.IntegerField(choices=STATUS, default=0)
+class ProductItem(models.Model):
+    Title =  models.CharField(max_length=225,default="")
+    Planting = models.CharField(max_length=100)
+    Marketing = models.CharField(max_length=100)
+    Colour = models.CharField(max_length=100)
+    Leaf_Size= models.CharField(max_length=100)
+    Volume  = models.CharField(max_length=100)
+    Filling_Value = models.CharField(max_length=100)
+    Nicotine  = models.CharField(max_length=100)
+    Reducing_Sugars = models.CharField(max_length=100)
+    Chloride  = models.CharField(max_length=100)
+    Image = models.ImageField(upload_to='uploads/')
 
-    # class Meta:
-    #     ordering = ['-Create_at']
-
+   
     def __str__(self):
             return self.Title
     

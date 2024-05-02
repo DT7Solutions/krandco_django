@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact,ProductItems
+from .models import Contact,ProductItem
 from import_export.admin import ImportExportModelAdmin
 # from .resources import ProductItemResource
 
@@ -12,11 +12,10 @@ admin.site.register(Contact,AdminContact)
 
 
 class AdminProduct(ImportExportModelAdmin):
-    # resource_class = ProductItemResource
-    list_display=('Title','CropYear','CurrentStock')
+    list_display=['Title','Planting','Marketing']
 
 
-admin.site.register(ProductItems,AdminProduct)
+admin.site.register(ProductItem,AdminProduct)
 
 # class AdminImageCategories(admin.ModelAdmin):
 #     list_display=('Image','Created')

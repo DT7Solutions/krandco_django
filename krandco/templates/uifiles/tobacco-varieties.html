@@ -1,95 +1,473 @@
-
 {% extends 'uifiles/base.html' %}
 {% load static %}
 {% block content %}
 
 
 
-    <!-- Start Breadcrumb 
+<!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(/static/assets/img/about/tobaccoproperties.png);background-size: 100%!important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Tobacco Varieties</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">Tobacco-Varieties</li>
-                        </ol>
-                    </nav>
-                </div>
+<div class="breadcrumb-area text-center shadow dark bg-fixed text-light"
+    style="background-image: url(/static/assets/img/about/tobaccoproperties.png);background-size: 100%!important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>Tobacco Varieties</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Tobacco-Varieties</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
-    <!-- End Breadcrumb -->
+</div>
+<!-- End Breadcrumb -->
 
-  
- <!-- Start Team Single Area
-    ============================================= -->
-    <div class="farmer-single-area bg-white ">
-        {% for Productitem in Products %}
-        <div class="container my-5 pb-5 ">
-            <div class="farmer-content-top">
-                <!-- <div class=" mt-3">
-                               
-                    <h4><a href="#">{{Productitem.Title}}</a></h4>
-                </div> -->
-                <div class="row ">
-                    <div class="col-lg-4 farmer-stye-one bg-gray">
-                        <div class="farmer-style-one-item">
-                            
-                            <div class="thumb">
-                                <img src="/media/{{Productitem.Image1}}" alt="Image Not Found">
-                              
+
+<section class="tobacco-main-sec pt-2 pb-2">
+    <div class="container">
+        <div class="row">
+            <!---- Product one start ------>
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto">
+                    <h5>Flue Cured Virgina (Traditional Tobacco)</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-one.jpg" alt="" class="pb-4">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row "> 
+                            <div class="tobacco-varieties-content flex-wrap">
+                            <div class="col-lg-6 col-6">
+                                <p>Planting</p>
+                                <p>Marketing</p>
                             </div>
-                            
+                
+                            <div class="col-lg-6 col-6 tobacco-second-content">
+                                <p>Mid-Oct to Nov 1st week</p>
+                                <p>Feb to May </p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p><b>Physical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Colour</p>
+                                <p>Leaf Size</p>
+                                <p>Volume (M1/Gm)</p>
+                                <p>Filling Value</p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Medium to Large</p>
+                                <p>Large</p>
+                                <p>0.13</p>
+                                <p>2.6 to 2.8</p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p><b>Chemical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Nicotine %</p>
+                                <p>Reducing_Sugars %</p>
+                                <p>Chloride %</p>
+                            </div>
+                            <div class="col-lg-6 col-6"> 
+                                <p>1.5 to 2.7</p>
+                                <p>5 to 20</p>
+                                <p>0.5 to 1.5</p>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-5 pr-50 pr-md-15 pr-xs-15">
-                        <div class="pf-item">
-                            <div class="gallery-style-two">
-                                <img src="/media/{{Productitem.Image1}}" alt="Thumb">
-                                <div class="overlay">
-                                    
-                                    <h4><a href="#">{{Productitem.Title}}</a></h4>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <!---- Product one end ------>
+
+            
+            <!---- Product two start ------>
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto">
+                    <h5>Flue Cured Virgina ( Mysore )</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-two.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row "> 
+                            <div class="tobacco-varieties-content flex-wrap">
+                            <div class="col-lg-6 col-6">
+                                <p>Planting</p>
+                                <p>Marketing</p>
+                            </div>
+                
+                            <div class="col-lg-6 col-6 tobacco-second-content">
+                                <p>Early- May to End June</p>
+                                <p>September to January</p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p><b>Physical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Colour</p>
+                                <p>Leaf Size</p>
+                                <p>Volume (M1/Gm)</p>
+                                <p>Filling Value</p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Lemon to Orange</p>
+                                <p>Large</p>
+                                <p>Small to medium</p>
+                                <p>2.9 to 3.8</p>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <p><b>Chemical Characteristics</b></p>
+                            </div>
+                            <div class="col-lg-6 col-6">
+                                <p>Nicotine %</p>
+                                <p>Reducing Sugars %</p>
+                                <p>Chloride %</p>
+                            </div>
+                            <div class="col-lg-6 col-6"> 
+                                <p>1.25 to 2.5</p>
+                                <p>8 to 22</p>
+                                <p>0.2 to 0.6</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product two end ------>
+
+            <!---- Product three start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">Flue Cured Virgina (NLS)</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-three.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <P>Marketing</P>
                                 </div>
-                               
+                                <div class="col-lg-6 col-6">
+                                    <p>Early-October to End-November</p>
+                                    <P>February to May</P>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Lemon Orange to Orange</p>
+                                    <p>Large</p>
+                                    <p>0.13</p>
+                                    <p>2.2 to 2.8</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                              
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>1.5 to 3.5</p>
+                                    <p>7 to 18</p>
+                                    <p>0.7 to 1.5</p>
+                                </div>
                             </div>
                         </div>
-                    </div> -->
-                    <div class="col-lg-7 right-info">
-                        <h4 style="font-weight: 700;">{{Productitem.Title}}</h4>
-                            <ul class="fields mt-20 ">
-                                <li class="property d-flex col-lg-12">
-                                    <p class="col-lg-4 pro mb-3">Crop Year</p> <p class="col-lg-8 ">
-                                        : {{Productitem.CropYear}}</p></li>
-                                        <li class="property  d-flex col-lg-12"><p class="col-lg-4 pro ">Current Stock</p> <p class="col-lg-8 "> : {{Productitem.CurrentStock}}</p></li>
-                                <li class="property  d-flex col-lg-12"><p class="col-lg-4 pro ">Type</p> <p class="col-lg-8 ">: Feb to May</p></li>
-                                <li class="property d-flex col-lg-12"><p class="col-lg-4 pro">Grade</p> <p class="col-lg-8 ">: Feb to May</p></li>
-                                <li class="property d-flex col-lg-12"><p class="col-lg-4 pro ">Form</p> <p class="col-lg-8 ">: Feb to May</p></li>
-                                <li class="property d-flex col-lg-12"><p class="col-lg-4 pro">Nic</p></p> <p class="col-lg-8 ">: Feb to May</p></li>
-                                <li class="property d-flex col-lg-12"><p class="col-lg-4 pro">Sug</p> <p class="col-lg-8">: 254</p></li>
-                                <li class="property d-flex col-lg-12"><p class="col-lg-4 pro">Packing</p> <p class="col-lg-8">: Feb to May</p></li>
-                                <li class="property  d-flex col-lg-12"><p class="col-lg-4 pro">Quantity</p> <p class="col-lg-8">: 20Tons</p></li>
-                               
-                            </ul>
-                        <!-- <span>Physical Characteristics</span>
-                        <span>Chemical Characteristics</span> -->
-                        
-                        
                     </div>
                 </div>
             </div>
+            <!---- Product three end ------>
+
+            <!---- Product four start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">Burley Tobacco (Traditional):</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-four.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Oct 1st week to Nov 4th week</p>
+                                    <p>May to June</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Rich tan to Brown</p>
+                                    <p>Medium to Large</p>
+                                    <p>Nill</p>
+                                    <p>3.5 to 5.5</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>2 to 4</p>
+                                    <p>1.5 to 3</p>
+                                    <p>0.5 to 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product four end ------>
+
+            <!---- Product five start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">DFC (Dark Fire Cured):</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-five.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content d-flex flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>End-August to Mid-September</p>
+                                    <p>Early March</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Brown to Dark Brown</p>
+                                    <p>Medium to large</p>
+                                    <p>0.13</p>
+                                    <p>2.2 to 2.8</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>2.5 to 3.75</p>
+                                    <p>3.5 to 5</p>
+                                    <p>1 to 1.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product five end ------>
+
+            <!---- Product six start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">Suncured Country Tobacco (Kurnool)</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-six.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p> Mid-September to Mid-November</p>
+                                    <p>April to June</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nut-Brown</p>
+                                    <p>Medium to Large</p>
+                                    <p>0.07 to 0.20</p>
+                                    <p>3.8 to 5.8</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>1.5 to 3</p>
+                                    <p>3 to 7</p>
+                                    <p>0.5 to 1.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product six end ------>
+
+            <!---- Product seven start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">Chewing Tobacco (Rustica):</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-seven.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>October to November</p>
+                                    <p>April to August</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Brown to Dark Brown</p>
+                                    <p>Medium to large</p>
+                                    <p>Nill</p>
+                                    <p>3.2 to 5</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>2.5 to 4.5</p>
+                                    <p>1.1 to 2.6</p>
+                                    <p>1 to 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product seven end ------>
+
+
+            <!---- Product eight start ------>
+            
+            <div class="tobacco-varieties-sec pt-3 pb-3">
+                <div class="col-lg-6 tobacco-varieties-img my-auto pb-5">
+                    <h5 class="pt-2 pb-2">Chewing Tobacco (Rustica):</h5>
+                    <img src="/static/assets/img/tobacco-varieties/product-eight.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tobacco-varieties-content flex-wrap">
+                                <div class="col-lg-6 col-6">
+                                    <p>Planting</p>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>October to November</p>
+                                    <p>April to June</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Physical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Colour</p>
+                                    <p>Leaf Size</p>
+                                    <p>Volume (M1/Gm)</p>
+                                    <p>Filling Value</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nill</p>
+                                    <p>Medium to Large</p>
+                                    <p>0.13</p>
+                                    <p>2.6 to 2.8</p>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    <p><b>Chemical Characteristics</b></p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nicotine %</p>
+                                    <p>Reducing Sugars %</p>
+                                    <p>Chloride %</p>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <p>Nill</p>
+                                    <p>Nill</p>
+                                    <p>3 to 6%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- Product eight end ------>
+
         </div>
-        {% endfor %}
     </div>
-    <!-- End Team Single Area -->
-        <!-- Start Featured Product 
-    ============================================= -->
 
-    <!-- End Featured Product -->
-
+</section>
 
 
 {% endblock %}

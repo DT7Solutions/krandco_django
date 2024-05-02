@@ -219,10 +219,10 @@ Version: 1.0
 	align-items: center;
 }
 
-.navbar .attr-right {
+/* .navbar .attr-right {
 	float: right;
 	margin-left: 30px;
-}
+} */
 
 .main-nav-content .collapse {
 	float: left;
