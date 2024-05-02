@@ -9174,6 +9174,12 @@ ul.list-two li i {
 .tobacco-varieties-sec{
 	border-bottom: 2px dashed lightgray !important;
 }
+.tobacco-varieties-sec:last-child{
+	border-bottom: none !important;
+}
+.tobacco-varieties-sec:last-child:hover{
+	border-bottom: none !important;
+}
 
 .tobacco-varieties-sec:hover{
 	border-bottom: 2px solid green !important;
