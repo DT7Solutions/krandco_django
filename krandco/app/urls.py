@@ -8,7 +8,7 @@ urlpatterns = [
     path('about/',about_us,name='about_us'),
     path('tobacco-varieties/',tobacco_varieties,name='tobacco_varieties'),
     path('stock-update/',stock_update,name='stock_update'),
-    path('csractivity/',csractivity,name='csractivity'),
+    # path('csractivity/',csractivity,name='csractivity'),
     path('csrdetails/', csrdetails , name='csrdetails'),
     path('contact/',contact,name='contact'),
 
