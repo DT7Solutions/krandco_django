@@ -23,6 +23,8 @@ def csractivity(request):
 
 def csrdetails(request):
     return render(request, 'uifiles/csr.html')
+def version(request):
+    return render(request, 'uifiles/version.html')
 
 
 def stock_update(request):

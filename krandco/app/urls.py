@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index,about_us,tobacco_varieties,stock_update,contact,csractivity,csrdetails
+from .views import index,about_us,tobacco_varieties,stock_update,contact,csractivity,csrdetails,version
 
 
 
@@ -11,5 +11,6 @@ urlpatterns = [
     # path('csractivity/',csractivity,name='csractivity'),
     path('csrdetails/', csrdetails , name='csrdetails'),
     path('contact/',contact,name='contact'),
+    path('version/',version,name='version'),
 
 ]

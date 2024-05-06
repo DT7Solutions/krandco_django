@@ -1058,7 +1058,7 @@ p.stock.in-stock {
 
 .product-estimate-delivary {
 	display: block;
-	padding: 15px;
+	padding: 5px;
 	margin-top: 50px;
 	border-left: 3px solid var(--color-primary);
 	border-radius: 5px;
@@ -1079,13 +1079,13 @@ p.stock.in-stock {
 }
 
 .product-estimate-delivary span {
-	padding-left: 34px;
+	/* padding-left: 34px; */
 	position: relative;
 	margin-left: 10px;
 	z-index: 1;
 }
 
-.product-estimate-delivary span::after {
+/* .product-estimate-delivary span::after {
 	position: absolute;
 	left: 0;
 	top: 10px;
@@ -1093,7 +1093,7 @@ p.stock.in-stock {
 	height: 2px;
 	width: 20px;
 	background: #cccccc;
-}
+} */
 
 .product-estimate-delivary strong {
 	font-weight: 600;

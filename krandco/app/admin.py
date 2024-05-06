@@ -12,7 +12,7 @@ admin.site.register(Contact,AdminContact)
 
 
 class AdminProduct(ImportExportModelAdmin):
-    list_display=['Title','Planting','Marketing']
+    list_display=['Title','Create_at','CreatedName','Type']
 
 
 admin.site.register(ProductItem,AdminProduct)

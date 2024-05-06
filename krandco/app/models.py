@@ -39,16 +39,20 @@ class Contact(models.Model):
 
 class ProductItem(models.Model):
     Title =  models.CharField(max_length=225,default="")
-    Planting = models.CharField(max_length=100)
-    Marketing = models.CharField(max_length=100)
-    Colour = models.CharField(max_length=100)
-    Leaf_Size= models.CharField(max_length=100)
-    Volume  = models.CharField(max_length=100)
-    Filling_Value = models.CharField(max_length=100)
+    Type = models.CharField(max_length=100)
+    Grade = models.CharField(max_length=100)
     Nicotine  = models.CharField(max_length=100)
-    Reducing_Sugars = models.CharField(max_length=100)
-    Chloride  = models.CharField(max_length=100)
+    Sugar = models.CharField(max_length=100)
+    Packing = models.CharField(max_length=100)
+    Quantity  = models.CharField(max_length=100)
+    Price = models.CharField(max_length=100)
     Image = models.ImageField(upload_to='uploads/')
+    CreatedName =  models.CharField(max_length=100)
+    Create_at = models.DateTimeField(default=datetime.now)
+
+
+    class Meta:
+        ordering = ['-Create_at']
 
    
     def __str__(self):
