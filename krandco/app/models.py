@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from import_export import resources, fields
+from django.utils import timezone
 
 
 # Create your models here.
@@ -48,7 +49,8 @@ class ProductItem(models.Model):
     Price = models.CharField(max_length=100)
     Image = models.ImageField(upload_to='uploads/')
     CreatedName =  models.CharField(max_length=100)
-    Create_at = models.DateTimeField(default=datetime.now)
+    # Create_at = models.DateTimeField(default=datetime.now)
+    Create_at = models.DateTimeField(default=timezone.now)
 
 
     class Meta:
