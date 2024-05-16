@@ -8511,7 +8511,8 @@ ul.list-two li i {
 .feature-product-item {
     background-size: cover;
     background-position: right center;
-    padding: 50px;
+    /* padding: 50px; */
+	padding:30px 30px 30px 30px;
     border: 1px solid #e7e7e7;
     border-radius: 10px;
 	position: relative;
@@ -9217,3 +9218,11 @@ ul.list-two li i {
 }
 
 
+@media (min-width:992px) {
+	.alignments{
+		display:flex!important;
+		flex-direction: row!important;
+		justify-content: space-evenly!important;
+		flex-wrap: wrap!important;
+	}
+}
