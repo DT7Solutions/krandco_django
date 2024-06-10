@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Contact,ProductItem
 from import_export.admin import ImportExportModelAdmin
-# from .resources import ProductItemResource
+from .resources import ProductItemResource
 
 # Register your models here.
 
@@ -13,6 +13,7 @@ admin.site.register(Contact,AdminContact)
 
 class AdminProduct(ImportExportModelAdmin):
     list_display=['Title','Create_at','CreatedName','Type']
+    resource_class = ProductItemResource
 
 
 admin.site.register(ProductItem,AdminProduct)
