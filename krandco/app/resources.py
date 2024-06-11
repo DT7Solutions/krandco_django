@@ -20,6 +20,7 @@ class ProductItemResource(resources.ModelResource):
         import_id_fields = ('Title',)
         fields = ('id', 'Title', 'Type', 'Grade', 'Nicotine', 'Sugar', 'Packing', 'Quantity', 'Price', 'Image', 'CreatedName', 'Create_at')
 
+
     def get_instance(self, instance_loader, row):
         """
         Override this method to return an existing instance based on the import_id_fields.
