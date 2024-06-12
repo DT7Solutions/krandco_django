@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Contact,ProductItem
 from import_export.admin import ImportExportModelAdmin
-from import_export.formats.base_formats import XLSX, CSV, JSON
+# from import_export.formats.base_formats import XLSX, CSV, JSON
 
 from .resources import ProductItemResource
 
@@ -15,7 +15,7 @@ admin.site.register(Contact,AdminContact)
 
 class AdminProduct(ImportExportModelAdmin):
     list_display=['Title','Create_at','CreatedName','Type']
-    formats = [XLSX, CSV, JSON]
+    # formats = [XLSX, CSV, JSON]
     resource_class = ProductItemResource
 
 
