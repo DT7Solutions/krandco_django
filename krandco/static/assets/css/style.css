@@ -9163,7 +9163,7 @@ ul.list-two li i {
 }
 .tobacco-varieties-content p{
 	color: #000000 !important;
-	line-height: 10px !important;
+	line-height: 20px !important;
 }
 .tobacco-varieties-sec{
 	display: flex !important;
@@ -9196,9 +9196,14 @@ ul.list-two li i {
 		overflow: hidden;
 		font-size: 11px !important;
 	}
+	.tobacco-varieties-content p{
+		color: #000000 !important;
+		line-height: 15px !important;
+		width:100%!important;
+	}
 	.stock-update-img{
 		width:200px;
-		height:200px!important;
+		/* height:200px!important; */
 		margin-bottom: 2rem!important;
 	}
 	.tobacco-second-content{
@@ -9233,6 +9238,6 @@ ul.list-two li i {
 }
 
 .stock-update-img{
-	width:200px;
-	height:180px;
+	width:300px;
+	height:300px;
 }
