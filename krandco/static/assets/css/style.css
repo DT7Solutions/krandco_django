@@ -9196,6 +9196,11 @@ ul.list-two li i {
 		overflow: hidden;
 		font-size: 11px !important;
 	}
+	.stock-update-img{
+		width:200px;
+		height:200px!important;
+		margin-bottom: 2rem!important;
+	}
 	.tobacco-second-content{
 		margin-left: -9px !important;
 	}
@@ -9225,4 +9230,9 @@ ul.list-two li i {
 		justify-content: space-evenly!important;
 		flex-wrap: wrap!important;
 	}
+}
+
+.stock-update-img{
+	width:200px;
+	height:180px;
 }
