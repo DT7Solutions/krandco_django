@@ -55,6 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'krandco.urls'
+DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600  # 100MB
 
 TEMPLATES = [
     {
@@ -140,3 +141,14 @@ UPLOAD_ROOT = os.path.join(BASE_DIR, 'upload')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'krandco@krandco.in'
+EMAIL_HOST_PASSWORD = 'igxgkbkmwwquhinu'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+

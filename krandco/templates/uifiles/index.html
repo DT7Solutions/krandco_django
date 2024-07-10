@@ -437,48 +437,48 @@
                 <div class="col-tact-stye-one col-lg-7">
                     <div class="contact-form-style-one mb-md-50">
                         <h5 class="sub-title">Have Questions?</h5>
-                        <h2 class="heading">Send us a Massage</h2>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
+                        <h2 class="heading">Send us a Message</h2>
+                        <form action="#" method="post" class="contact-form contact-form" id="form-submittwo">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="nameone" name="nameone" placeholder="Name" type="text" required/>
+                                        <!-- <span class="alert-error"></span> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="emailtwo" name="emailtwo" placeholder="Email*" type="email" required/>
+                                        <!-- <span class="alert-error"></span> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="phonetwo" name="phonetwo" placeholder="Phone" type="text" required/>
+                                        <!-- <span class="alert-error"></span> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="address" id="address" placeholder="Address" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="addresstwo" name="addresstwo" placeholder="Address" type="text" required/>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                        <textarea class="form-control" id="commentstwo" name="commentstwo" placeholder="Tell Us About Project" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
+                                    <button type="button" name="submit" id="submit-btntwo">
                                         <i class="fa fa-paper-plane"></i> Get in Touch
                                     </button>
                                 </div>

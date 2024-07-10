@@ -41,3 +41,46 @@ $(document).ready(function(){
 
     })
 })
+
+$(document).ready(function(){
+    $('#submit-btntwo').click(function(){
+
+        let name = $('#nametwo').val()
+        let email = $('#emailtwo').val()
+        let phone = $('#phonetwo').val()
+        let address = $('#addresstwo').val()
+        let comments = $('#commentstwo').val()
+        let csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]').val()
+
+        let data = new FormData()
+        data.append('name',name),
+        data.append('email',email),
+        data.append('phone',phone),
+        data.append('address',address),
+        data.append('comments',comments),
+        data.append('csrfmiddlewaretoken',csrfmiddlewaretoken)
+
+        $.ajax({
+            type:'POST',
+            url:'/',
+            processData:false,
+            contentType:false,
+            cache:false,
+            data:data,
+            success:function(data, status, xhr){
+                $('#form-submittwo')[0].reset();
+                if(data.success === true){
+                  alert("Form Submission Successfull")
+                } else{
+                    alert("Invalid Form Submission")
+                   
+                }   
+            },
+            error:function(data){
+                alert("Form Submission Failed")
+            }
+            
+        })
+
+    })
+})
